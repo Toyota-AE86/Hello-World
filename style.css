@@ -11,7 +11,7 @@ body {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
       color: black;
-      background-color: LightCyan;
+      background-color: LightSlateGray;
     	}
 
 .nav-pills > li.active > a:hover {
