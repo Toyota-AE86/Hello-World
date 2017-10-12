@@ -1,3 +1,8 @@
+html { 
+  background: url(https://static.pexels.com/photos/235994/pexels-photo-235994.jpeg) no-repeat center fixed; 
+  background-size: cover;
+}
+
 body {
   font-family: source sans pro;
   font-size: 20px;
