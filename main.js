@@ -12,6 +12,8 @@ function colorchange(id)
   {
     document.getElementById(id).style.background = "rgb(255,145,0)";
   }
+  document.getElementByID("buttonID").addEventListener("click", function);
+
 
 }
 </script>
