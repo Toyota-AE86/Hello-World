@@ -7,14 +7,6 @@ document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasic
 
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
 
-
-
-function myTimer() {
-    var d = new Date();
-    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-}
-
-
 function funcBuyBasicCar() {
     if(varMoney>=10){    
     varNumBasicCar++
