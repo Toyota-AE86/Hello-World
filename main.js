@@ -14,5 +14,5 @@ function funcBuyBasicCar() {
 
 function funcBuyMuscleCar() {
     varNumMuscleCar++
-    document.getElementById("badgeBasicCar").innerHTML = varNumMuscleCar;
+    document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar;
 }
