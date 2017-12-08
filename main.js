@@ -1,6 +1,6 @@
 var varNumBasicCar = 0;
 var varNumMuscleCar = 0;
-var varMoney = 0;
+var varMoney = 10;
 
 
 document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasicCar);
