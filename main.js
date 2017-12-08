@@ -8,6 +8,11 @@ document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasic
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
 
 function funcBuyBasicCar() {
-    varMoney++
-    document.getElementById("badgeBasicCar").innerHTML = varMoney;
+    varNumBasicCar++
+    document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar;
+}
+
+function funcBuyMuscleCar() {
+    varNumMuscleCar++
+    document.getElementById("badgeBasicCar").innerHTML = varNumMuscleCar;
 }
