@@ -9,10 +9,14 @@ document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMusc
 
 function funcBuyBasicCar() {
     varNumBasicCar++
+    varMoney-=10
     document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar;
+    document.getElementById("spanBankAccount").innerHTML = varMoney;
 }
 
 function funcBuyMuscleCar() {
     varNumMuscleCar++
+    varMoney-=100
     document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar;
+    document.getElementById("spanBankAccount").innerHTML = varMoney;
 }
