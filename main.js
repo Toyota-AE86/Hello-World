@@ -1,5 +1,9 @@
 var varNumBasicCar = 0;
 var varNumMuscleCar = 0;
+
+var varCostNextBasicCar = 10;
+var varCostNextMuscleCar = 100;
+
 var varMoney = 10;
 var timer = setInterval(funcPayment, 1000);
 
