@@ -23,11 +23,13 @@ function funcBuyBasicCar() {
 }
 
 function funcBuyMuscleCar() {
-    if(varMoney>=100){  
+    if(varMoney>=varCostNextMuscleCar){  
     varNumMuscleCar++
-    varMoney-=100
+    varMoney-=varCostNextMuscleCar
+    varCostNextBasicCar = Math.pow(varCostNextMuscleCar, 1.1)
     document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar;
     document.getElementById("spanBankAccount").innerHTML = varMoney;
+    document.getElementById("spanCostNextBasicCar").innerHTML = varCostNextMuscleCar;
     }
 }
 
