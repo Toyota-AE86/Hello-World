@@ -18,6 +18,7 @@ function funcBuyBasicCar() {
     varCostNextBasicCar = Math.pow(varCostNextBasicCar, 1.1)
     document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar;
     document.getElementById("spanBankAccount").innerHTML = varMoney;
+    document.getElementById("spanCostNextBasicCar").innerHTML = varCostNextBasicCar;
     }
 }
 
