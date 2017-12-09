@@ -12,9 +12,10 @@ document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasic
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
 
 function funcBuyBasicCar() {
-    if(varMoney>=10){    
+    if(varMoney>=varCostNextBasicCar){    
     varNumBasicCar++
-    varMoney-=10
+    varMoney-=varCostNextBasicCar
+    varCostNextBasicCar = Math.pow(varCostNextBasicCar, 1.1)
     document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar;
     document.getElementById("spanBankAccount").innerHTML = varMoney;
     }
