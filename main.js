@@ -26,7 +26,7 @@ function funcBuyMuscleCar() {
     if(varMoney>=varCostNextMuscleCar){  
     varNumMuscleCar++
     varMoney-=varCostNextMuscleCar
-    varCostNextBasicCar = Math.pow(varCostNextMuscleCar, 1.1)
+    varCostNextMuscleCar = Math.pow(varCostNextMuscleCar, 1.1)
     document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar;
     document.getElementById("spanBankAccount").innerHTML = varMoney;
     document.getElementById("spanCostNextMuscleCar").innerHTML = varCostNextMuscleCar;
