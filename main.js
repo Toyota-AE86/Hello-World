@@ -16,9 +16,9 @@ function funcBuyBasicCar() {
     varNumBasicCar++
     varMoney-=varCostNextBasicCar
     varCostNextBasicCar = Math.pow(varCostNextBasicCar, 1.1)
-    document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar;
-    document.getElementById("spanBankAccount").innerHTML = varMoney;
-    document.getElementById("spanCostNextBasicCar").innerHTML = varCostNextBasicCar;
+    document.getElementById("badgeBasicCar").innerHTML = varNumBasicCar.toFixed(2);
+    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
+    document.getElementById("spanCostNextBasicCar").innerHTML = varCostNextBasicCar.toFixed(2);
     }
 }
 
@@ -27,13 +27,13 @@ function funcBuyMuscleCar() {
     varNumMuscleCar++
     varMoney-=varCostNextMuscleCar
     varCostNextMuscleCar = Math.pow(varCostNextMuscleCar, 1.1)
-    document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar;
-    document.getElementById("spanBankAccount").innerHTML = varMoney;
-    document.getElementById("spanCostNextMuscleCar").innerHTML = varCostNextMuscleCar;
+    document.getElementById("badgeMuscleCar").innerHTML = varNumMuscleCar.toFixed(2);
+    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
+    document.getElementById("spanCostNextMuscleCar").innerHTML = varCostNextMuscleCar.toFixed(2);
     }
 }
 
 function funcPayment() {
    varMoney+=varNumBasicCar+varNumMuscleCar*5
-   document.getElementById("spanBankAccount").innerHTML = varMoney;
+   document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
     }
