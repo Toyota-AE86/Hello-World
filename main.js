@@ -1,15 +1,17 @@
 var varNumBasicCar = 0;
 var varNumMuscleCar = 0;
+var varNumSportsCar = 0;
 
 var varCostNextBasicCar = 10;
 var varCostNextMuscleCar = 100;
+var varCostNextSportsCar = 1000;
 
 var varMoney = 10;
 var timer = setInterval(funcPayment, 1000);
 
 document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasicCar);
-
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
+document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuySportsCar);
 
 function funcBuyBasicCar() {
     if(varMoney>=varCostNextBasicCar){    
@@ -33,7 +35,18 @@ function funcBuyMuscleCar() {
     }
 }
 
+function funcBuySportsCar() {
+    if(varMoney>=varCostNextSportsCar){  
+    varNumSportsCar++
+    varMoney-=varCostNextSportsCar
+    varCostNextSportsCar = Math.pow(varCostNextSportsCar, 1.1)
+    document.getElementById("badgeSportsCar").innerHTML = varNumSportsCar
+    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
+    document.getElementById("spanCostNextSportsCar").innerHTML = varCostNextSportsCar.toFixed(2);
+    }
+}
+
 function funcPayment() {
-   varMoney+=varNumBasicCar+varNumMuscleCar*5
+   varMoney+=varNumBasicCar+varNumMuscleCar*5+varNumSportsCar*10
    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
     }
