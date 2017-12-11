@@ -11,7 +11,7 @@ var timer = setInterval(funcPayment, 1000);
 
 document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasicCar);
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
-document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuySportsCar);
+document.getElementById("btnBuySportsCar").addEventListener("click", funcBuySportsCar);
 
 function funcBuyBasicCar() {
     if(varMoney>=varCostNextBasicCar){    
