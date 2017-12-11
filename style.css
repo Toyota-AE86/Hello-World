@@ -27,3 +27,16 @@ body {
 .btn {
   border-radius: 0px;
 }
+
+.btn p:first-child {
+  text-decoration: underline;
+}
+
+.btn p:first-child::first-letter {
+Color: FireBrick
+}
+
+p::selection {
+background: #FireBrick;
+   color: #fff;
+}
