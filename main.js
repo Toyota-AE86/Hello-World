@@ -1,6 +1,7 @@
 var varNumBasicCar = 0;
 var varNumMuscleCar = 0;
 var varNumSportsCar = 0;
+var varNumGears = 0;
 
 var varIncomeBasicCar = 1;
 var varIncomeMuscleCar = 5;
@@ -9,6 +10,7 @@ var varIncomeSportsCar = 10;
 var varCostNextBasicCar = 10;
 var varCostNextMuscleCar = 100;
 var varCostNextSportsCar = 1000;
+var varCostNextGears = 100;
 
 var varMoney = 10;
 var timer = setInterval(funcPayment, 1000);
@@ -48,6 +50,18 @@ function funcBuySportsCar() {
     document.getElementById("badgeSportsCar").innerHTML = varNumSportsCar
     document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
     document.getElementById("spanCostNextSportsCar").innerHTML = varCostNextSportsCar.toFixed(2);
+    }
+}
+
+function funcBuyGears() {
+    if(varMoney>=varCostNextGears){  
+    varIncomeBasicCar*=1.2
+    varMoney-=varCostNextGears
+    varNumGears++
+    varCostNextGears = Math.powvarCostNextGears, 1.1)
+    document.getElementById("badgeGears").innerHTML = varNumGears
+    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
+    document.getElementById("spanCostNextSportsCar").innerHTML = varCostNextGears.toFixed(2);
     }
 }
 
