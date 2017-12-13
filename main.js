@@ -16,6 +16,7 @@ var timer = setInterval(funcPayment, 1000);
 document.getElementById("btnBuyBasicCar").addEventListener("click", funcBuyBasicCar);
 document.getElementById("btnBuyMuscleCar").addEventListener("click", funcBuyMuscleCar);
 document.getElementById("btnBuySportsCar").addEventListener("click", funcBuySportsCar);
+document.getElementById("btnBuyGears").addEventListener("click", funcBuyGears);
 
 function funcBuyBasicCar() {
     if(varMoney>=varCostNextBasicCar){    
@@ -51,6 +52,6 @@ function funcBuySportsCar() {
 }
 
 function funcPayment() {
-   varMoney+=varIncomeBasicCar + varIncomeMuscleCar + varIncomeSportsCar
+   varMoney+= varNumBasicCar*varIncomeBasicCar +  varNumMuscleCar*varIncomeMuscleCar + varNumSportsCar*varIncomeSportsCar
    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
     }
