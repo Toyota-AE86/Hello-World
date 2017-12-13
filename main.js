@@ -2,6 +2,10 @@ var varNumBasicCar = 0;
 var varNumMuscleCar = 0;
 var varNumSportsCar = 0;
 
+var varIncomeBasicCar = 1;
+var varIncomeMuscleCar = 5;
+var varIncomeSportsCar = 10;
+
 var varCostNextBasicCar = 10;
 var varCostNextMuscleCar = 100;
 var varCostNextSportsCar = 1000;
@@ -47,6 +51,6 @@ function funcBuySportsCar() {
 }
 
 function funcPayment() {
-   varMoney+=varNumBasicCar+varNumMuscleCar*5+varNumSportsCar*10
+   varMoney+=varIncomeBasicCar + varIncomeMuscleCar + varIncomeSportsCar
    document.getElementById("spanBankAccount").innerHTML = varMoney.toFixed(2);
     }
